@@ -1,3 +1,14 @@
-body{
-    background: radial-gradient(circle, rgba(63,94,251,0.8) 0%, rgba(150,100,107,0.8) 100%);
+header{
+    background-color: rgb(55, 55, 55);
+    color: white;
 }
+body{
+    background-color: rgb(97, 97, 97);
+    background-image: url('../images/circuit-board.svg');
+    color: white;
+}
+a{
+    color: black;
+}
+
+/*background-image: url('../images/hexagons.svg');*/
