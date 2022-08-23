@@ -10,5 +10,10 @@ body{
 a{
     color: black;
 }
+@media (max-width: 952px) {
+    body{
+        background-color: red;
+    }
+}
 
 /*background-image: url('../images/hexagons.svg');*/
