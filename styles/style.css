@@ -10,7 +10,7 @@ body{
 a{
     color: black;
 }
-@media (max-width: 952px) {
+@media screen and (max-width: 952px) {
     body{
         background-color: red;
     }
