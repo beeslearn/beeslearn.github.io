@@ -1,19 +1,71 @@
-header{
-    background-color: rgb(55, 55, 55);
-    color: white;
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
 }
-body{
-    background-color: rgb(97, 97, 97);
-    background-image: url('../images/circuit-board.svg');
-    color: white;
+nav{
+    max-width: 1280px;
+    background-color: rgb(55, 55, 55);
+    padding: 10px 10px;
+}
+ul{
+    display: inline;
+    float: right;
+}
+li{
+    display: inline;
+    line-height: normal;
+    margin: 20px;
 }
 a{
+    color: white;
+}
+a:hover{
     color: black;
 }
-@media screen and (max-width: 952px) {
-    body{
-        background-color: red;
-    }
+a.active{
+    background-color: rgb(97, 97, 97);
+    border-radius: 10px;
+    padding: 2px 6px;
+}
+.checkbtn{
+    float: right;
+    display: none;
+}
+#check{
+    display: none;
 }
 
-/*background-image: url('../images/hexagons.svg');*/
+body {
+    background-color: rgb(97, 97, 97);
+    background-image: url('../images/circuit-board.svg');
+  }
+  .wrapper {
+    max-width: 1280px;
+    margin: 2em auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        margin: 0px 0px;
+        line-height: 50px;
+        transition: all 0.3s;
+    }
+    li{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+  }
