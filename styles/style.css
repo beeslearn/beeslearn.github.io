@@ -7,21 +7,28 @@
 }
 nav{
     width: 100%;
-    background-color: rgb(55, 55, 55);
-    padding: 10px 10px;
+    background-color: rgb(26, 26, 26);
+    height: 47px;
+}
+.enlace{
+    position: absolute;
+    padding: 10px;
 }
 ul{
     display: inline;
     float: right;
     margin-right: 40px;
+    line-height: 47px;
 }
 li{
     display: inline;
-    line-height: normal;
     margin: 20px;
 }
-a{
+a.link{
     color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2px 6px;
 }
 a.link:hover{
     color: black;
@@ -30,14 +37,13 @@ a.link:hover{
     padding: 2px 6px;
 }
 a.active{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 5px;
     padding: 2px 6px;
 }
 a.active:hover{
-    background-color: white;
-    color: black;
+    background-color: rgb(255, 238, 170);
 }
 .checkbtn{
     float: right;
@@ -48,23 +54,28 @@ a.active:hover{
 }
 
 body {
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(50, 50, 50);
     background-image: url('../images/circuit-board.svg');
   }
   .wrapper {
     width: 100%;
+  }
+  p{
+    color: white;
+    margin: 2em;
   }
 
   @media screen and (max-width: 600px) {
     .checkbtn{
         display: block;
         margin-right: 30px;
+        line-height: 47px;
     }
     ul{
         position: fixed;
         width: 100%;
         background-color: rgb(55, 55, 55);
-        top: 50px;
+        top: 47px;
         text-align: center;
         left: -100%;
         margin: 0px 0px;
