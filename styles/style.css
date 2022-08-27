@@ -7,7 +7,7 @@
 }
 nav{
     width: 100%;
-    background-color: rgba(63,94,251,0.5);
+    background-color: rgba(63,94,251,0.7);
     height: 47px;
 }
 .enlace{
@@ -32,18 +32,19 @@ a.link{
 }
 a.link:hover{
     background-color: blue;
+    color: white;
     border-radius: 5px;
     padding: 4px 10px;
 }
 a.active{
-    background-color: blueviolet;
+    background-color: rgb(77, 182, 172);
     color: white;
     border-radius: 5px;
     padding: 4px 10px;
 }
 a.active:hover{
-    background-color: white;
-    color: black;
+    background-color: blue;
+    color: white;
 }
 .checkbtn{
     float: right;
@@ -54,13 +55,14 @@ a.active:hover{
 }
 
 body {
-    background: radial-gradient(circle, rgba(63,94,251,0.8) 0%, rgba(150,100,107,0.8) 100%);
+    background-color: rgb(224, 242, 241);
+    background-image: url('../images/circuit-board.svg');
   }
   .wrapper {
     width: 100%;
   }
   p{
-    color: white;
+    color: black;
     margin: 1em 1em;
   }
   h1{
@@ -77,12 +79,12 @@ body {
     ul{
         position: fixed;
         width: 100%;
-        background-color: rgb(55, 55, 55);
+        background-color: rgb(224, 242, 241);
         top: 47px;
         text-align: center;
         left: -100%;
         margin: 0px 0px;
-        line-height: 50px;
+        line-height: 30px;
         transition: all 0.3s;
     }
     li{
@@ -91,5 +93,21 @@ body {
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    a.link{
+        color: black;
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 4px 10px;
+    }
+    a.link:hover{
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        padding: 4px 10px;
+    }
+    a.active:hover{
+        background-color: blue;
+        color: white;
     }
   }
