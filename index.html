@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,95 +10,113 @@
   <title>BeesLearn</title>
   <link href="styles/style.css" rel="stylesheet">
 </head>
-
 <body>
 
-  <header>
+  <!--                            header                                     -->
 
-    <nav class="mainmenu">
+  <nav>
 
-      <a class="enlace" href="https://beeslearn.github.io/"><img src="images/logo.svg" alt="logo-marca" class="logo"></a>      
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <img src="images/bx-menu.svg" alt="img icon-menu">
+    </label>
 
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <img src="images/bx-menu.svg" alt="img icon-menu">
-      </label>
+    <a class="enlace" href="https://beeslearn.github.io/"><img src="images/logo.svg" alt="logo-marca" class="logo"></a> 
 
-      <ul>
-        <li><a class="active" href="https://beeslearn.github.io/">Inicio</a></li>
-        <li><a class="link" href="https://beeslearn.github.io/tutorials/">Tutorias</a></li>
-        <li><a class="link" href="https://beeslearn.github.io/about/">Nosotros</a></li>
-      </ul>
+    <ul>
+      <li><a class="active" href="https://beeslearn.github.io/">Inicio</a></li>
+      <li><a class="linkmenu" href="https://beeslearn.github.io/tutorials/">Tutoriales</a></li>
+      <li><a class="linkmenu" href="https://beeslearn.github.io/about/">Conocenos</a></li>
+    </ul>
 
-    </nav>
+  </nav>  
 
-  </header>
+  <!--                              banner                                      -->
 
-  <section class="barner">
-    <h1><titulo</title></h1>
-    <br>
-    <p>Desarrolla, mejora y fortalece todos los conocimientos y habilidades en el campo de la tecnología, la electrónica y el mundo digital. <br>Asesorias en talleres, laboratorios, preparación de examenes, diseños y mucho más</p>
-  </section>
+  <section class="containerBanner">
 
-  <section class="materias">
+    <div class="infoBox">
 
-    <div class="box ba">
-      <h2>Circuitos Eléctricos.</h2>
-    </div>
-    <div class="box bb">
-      <h2>Electrónica Digital.</h2>
-    </div>
-    <div class="box bc">
-      <h2>Proyectos.</h2>
+      <div class="callBox">
+        <img src="images/dark-gmail.svg" alt="img-phone" class="logo">
+      </div>
+
+      <div class="callBox">
+        <a href="malito:correo@gmail.com">correo@gmail.com</a>
+      </div>
+
     </div>
 
-  </section>
+    <div class="infoBox">
 
-  <div class="info">
-    <p>Estudia desde la comodidad de la casa, con asesorias virtuales o a domicilio.</p>
-  </div>
+      <div class="callBox">
+        <img src="images/black-phone.svg" alt="img-phone" class="logo">
+      </div>
 
-  <section class="servicios">
+      <div class="callBox">
+        <p>555-123-1234</p>
+      </div>
 
-    <div class="box bd">
-      <h2>Asesorias virtuales.</h2>
     </div>
-    <div class="box be">
-      <h2>Clases a domicilio.</h2><br>
-      <h4>Bogotá</h4>
-    </div>
-    <div class="box bf">
-      <h2>Acuerda un horario.</h2>
+
+    <div class="infoBox">
+
+      <a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX?text=Hola%20me%20encuentro%20interesado%20en%20una%20tutoria"> <img alt="Chat on WhatsApp" src="images/WhatsAppButtonGreenSmall.svg" /> </a>
+
     </div>
 
   </section>
 
-  <div class="info call">
-    <p>Mira nuestros video tutoriales y contacta por correo o whatsapp para más información</p> 
-  </div>
+  <!--                              section 1                                 -->  
 
-  <section class="redes">
+  <h1>Titulo</h1>
 
-    <div class="contacto">
-      <img class="red" src="images/gmail.svg" alt="img icon-menu">
-      <p class="red">correo@gmail</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, aliquam optio laborum aut officiis repellendus doloremque possimus dolores dolore, tempora sed praesentium vero similique assumenda dolorum voluptatum quaerat? Officiis, sequi.</p>
+
+  <!--                              section 2                                 -->  
+
+  <section class="containerServices">
+
+    <div class="boxService">
+      <img src="images/robot.svg" alt="img-robot" class="logo">
+      <h3 class="titleService">Electrónica</h3>
+      <p class="pService">Electrónica</p>
     </div>
 
-    <div class="contacto">
-      <img class="red" src="images/whatsapp.svg" alt="img icon-menu">
-      <p class="red">555-123 123</p>
-    </div>    
+    <div class="boxService">
+      <img src="images/code.svg" alt="img-code" class="logo">
+      <h3 class="titleService">Programación</h3>
+      <p class="pService">Programación</p>
+    </div>
 
-    <div class="contacto">
-      <img class="red" src="images/youtube.svg" alt="img icon-menu">
-      <p class="red">youtube</p>
-    </div> 
+    <div class="boxService">
+      <img src="images/project.svg" alt="img-project" class="logo">
+      <h3 class="titleService">Proyectos</h3>
+      <p class="pService">Proyectos</p>
+    </div>
+
+    <div class="boxService">
+      <img src="images/virtual.svg" alt="img-virtual" class="logo">
+      <h3 class="titleService">Clases virtuales</h3>
+      <p class="pService">Clases virtuales</p>
+    </div>
+
+    <div class="boxService">
+      <img src="images/motorcycle.svg" alt="img-motorcycle" class="logo">
+      <h3 class="titleService">Clases a domicilio</h3>
+      <p class="pService">Clases a domicilio</p>
+    </div>
+
+    <div class="boxService">
+      <img src="images/time.svg" alt="img-time" class="logo">
+      <h3 class="titleService">Acuerda un horario</h3>
+      <p class="pService">Acuerda un horario</p>
+    </div>
 
   </section>
+  <!--                              Footer                                  -->
+  <!--                              Footer                                  -->
 
-  <footer><p class="date">2022 Todos los derechos reservados</p></footer>
-
-  <script src="scripts/main.js"></script>  
+  <script src="scripts/main.js"></script>
 </body>
-
 </html>

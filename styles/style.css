@@ -1,228 +1,123 @@
 *{
   margin: 0%;
   padding: 0%;
-  box-sizing: border-box;
   font-family: sans-serif;
   list-style: none;
   text-decoration: none;
-  color: white;
+  box-sizing: border-box;
 }
-
 body{
-  background-color: rgb(228, 217, 217);
+  background-color: beige;
+  background-image: url('../images/background.svg');
 }
+/*                     menu nav                    */
 
-.mainmenu{
+nav{
+  background-color: #68e1fd;
   width: 100%;
   height: 60px;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,7,128,1) 0.1%, rgba(37,145,251,0.98) 99.8% );
 }
-
-.enlace, ul, li{
-  display: inline;
-  line-height: 60px;
-}
-
-.checkbtn, ul{
+nav ul{
   float: right;
+  margin-right: 20px;
 }
-
-li{
-  margin-right: 30px;
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
 }
-a.link{
-  color: white;
+nav ul li a{
+  color: #59aaf5;
+  padding: 5px 10px;
   border-radius: 5px;
-  padding: 4px 10px;
+  font-size: large;
+  font-weight: 500;
 }
-a.link:hover{
-  background-color: blue;
-  color: white;
-  border-radius: 5px;
-  padding: 4px 10px;
-}
-a.active{
+.linkmenu:hover, .active{
   background-color: white;
-  border-radius: 5px;
-  padding: 4px 10px;
-  color: black;
-}
-a.active:hover{
-  background-color: blue;
-  color: white;
-  border-radius: 5px;
-  padding: 4px 10px;
 }
 .checkbtn{
   float: right;
+  line-height: 60px;
+  cursor: pointer;
+  margin-right: 20px;
   display: none;
 }
 #check{
   display: none;
 }
 
-.barner{
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  padding: 20px 10%
+/*                         Section Banner                    */
+
+.containerBanner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 10px;
 }
-.info{
-  background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
-  width: 90%;
-  margin: 0% 5%;
-  border-radius: 20px;
-  padding: 20px 10%
+.infoBox{
+  display: flex;
+  flex-wrap: wrap;
+  height: 36px;
+  line-height: 36px;
+  margin-right: 20px;
 }
-.call{
-  margin-bottom: 20px;
+.callBox{
+  height: 36px;
+  line-height: 36px;
+  margin-right: 5px;
 }
-.servicios{
-  padding: 20px;
-  display: flex; 
+
+
+/*                         Section services                    */
+
+.containerServices{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
-  width: 100%;
-  height: auto;
-  margin: 0px 0px;
+  padding: 10px;
 }
-.materias{
-  padding: 20px;
-  display: flex; 
-  justify-content: space-around;
-  width: 100%;
-  height: auto;
-  margin: 0px 0px;
+.boxService{
+  width: 320px;
+  margin: 20px;
 }
-.box{
-  padding: 20px;
-  width: 250px;
-  height: 375px;
-  border-radius: 20px;
-  margin: 5px;
-}
-.ba{
-  background-image: url('../images/circuito.jpg');
-}
-
-.bb{
-  background-image: url('../images/digital.jpg');
-}
-
-.bc{
-  background-image: url('../images/robotkids.jpg');
-}
-
-.bd{
-  background-image: url('../images/virtualoffice.jpg');
-}
-
-.be{
-  background-image: url('../images/bicy.jpg');
-}
-
-.bf{
-  background-image: url('../images/open.jpg');
-}
-
-.redes{
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
-  padding: 20px;
-  display: block;  
-  width: 100%;
-  height: auto;
-  margin: 0px 0px;
+.titleService{
   text-align: center;
 }
-.contacto{
-  display: inline-block;
-  margin-right: 50px;
-  margin-left: 5px;
-}
-.red{
-  display: inline-block;
-}
 
-.date{
-  background-color: black;
-  color: white;
-  font-size: small;
-  text-align: center;
-  padding: 5px;
-}
+/*                           footer                             */
+/*                           media                             */
 
 @media screen and (max-width: 600px) {
+
   .checkbtn{
-      display: block;
-      margin-right: 30px;
-      line-height: 60px;
+    display: block;
   }
   ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.94) 0.1%, rgba(0,7,128,0.94) 99.8% );
-      top: 60px;
-      text-align: center;
-      left: -100%;
-      margin: 0px 0px;
-      line-height: 30px;
-      transition: all 0.3s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(104, 225, 253, 1);
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: 0.3s;
   }
-  li{
-      display: block;
-      margin: 30px 0px;
+  nav ul li{
+    display: block;
   }
   #check:checked ~ ul{
-      left: 0;
+    left: 0;
   }
-  a.link{
-      color: white;
-      background-color: transparent;
-      border-radius: 5px;
-      font-size: large;
-      padding: 4px 10px;
+  .containerBanner{
+    height: auto;
+    flex-direction: column-reverse;
   }
-  a.link:hover{
-      background-color: blue;
-      color: white;
-      border-radius: 5px;
-      padding: 4px 10px;
-  }
-  a.active{
-    font-size: large;
-  }
-  a.active:hover{
-      background-color: blue;
-      color: white;
-  }
-
-  .barner{
-    margin: 0px;
-  }
-  .servicios{
-    flex-direction: column;
-    justify-content: space-around;    
-  }
-  .materias{
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .box{
-    margin: 10px auto;
-  }
-  .contacto{
-    display: block;
-    margin-top: 20px;
-  }
+  .infoBox{
+    justify-content: center;
+  }  
 }
-
-/*
-background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-background-color: #21D4FD;
-background-image: linear-gradient(90deg, #21D4FD 0%, #B721FF 100%);
-background-image: url('../images/hexagons.svg');
-background-color: rgb(224, 242, 241);
-background-image: linear-gradient(90deg, #B721FF 0%, #21D4FD 100%);
-850px
-background-color: rgb(228, 217, 217);
-*/
