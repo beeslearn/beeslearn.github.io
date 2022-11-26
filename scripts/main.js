@@ -3,8 +3,7 @@
 let popup = document.getElementById("popup");
 let warning = document.getElementById("warning");
 
-let toogle = document.querySelector(".toogle");
-toogle.addEventListener('click',language);
+
 /*--------------var sliders----------------------------*/
 
 var slider = document.getElementById("volt");
@@ -76,12 +75,5 @@ function closewarning(){
   warning.classList.remove("open-warning");
 }
 
-function language() {
-  let goto = toogle.checked;
-  if(goto==true){
-    location.href="spanish/index.html";
-  }else{
-    location.href="../index.html";
-  }
-}
+
 

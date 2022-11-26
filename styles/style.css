@@ -122,23 +122,31 @@ header{
 .active:hover{
   color: var(--text-color);
 }
-
- .language{
-  width: 30%;
+.containerLanguage{
+  width: auto;
   display: flex;
+
+}
+
+.language{
+  width: auto;
+  height: auto;
+  display: flex;  
   align-items: center;
   justify-content: center;
- }
- .language__en{
-  color: var(--primary-dark-color);
- }
- .language__sp{
-  color: var(--text-color);
- }
- .language p{
-  font-size: large;
-  font-weight: 500;
- }
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  box-shadow:  6px 6px 7px #a6a6a6,
+              -6px -6px 7px #ffffff;
+}
+.language:hover{
+  transform: scale(0.95);
+}
+.idiom{
+  margin-left: 10px;
+}
  .switch{
   margin-right: 4px;
   margin-left: 4px;
@@ -149,55 +157,7 @@ header{
   width: 40px;
   height: 20px;
 }
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--primary-color);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 2px;
-  bottom: 2px;
-  background-color: var(--triadic-c-color);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #616161;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 0px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
-}
-.slider.round {
-  border-radius: 25px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-} 
 
 .social{
   width: 30%;
@@ -762,16 +722,13 @@ input:checked + .slider:before {
   .active{
     font-size: 18px;
   }
+  .containerLanguage{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
   .language{
-    width: auto;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
     transform: scale(0.9);
-   }
-  .language p{
-    font-size: medium;
-   }   
+   } 
    
   .social{
     width: 100%;
